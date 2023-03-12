@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react'
+import Catagory from './Menu/Catagory'
+import Header from './Menu/Header'
+import Data from './Menu/Data'
 function App() {
+  const [use,setUse]=useState(Data)
+  const [cat,setCat]=useState([])
+  const Flt=(es)=>{
+    if(es==="all"){
+      return setUse(Data)
+    }
+    const Fs= Data.filter((e)=>e.cat===es)
+     setUse(Fs)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header Ft={Flt}/>
+      {use.map((e)=><Catagory key={e.id} e={e}/>)}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

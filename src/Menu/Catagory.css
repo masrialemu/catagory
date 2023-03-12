@@ -1,0 +1,24 @@
+.cat{
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.cats img{
+    width: 400px;
+    height: 400px;
+}
+.cats{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.cats .nm{
+    font-weight: 300;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.cats .des{
+    margin-top: 10px;
+
+}

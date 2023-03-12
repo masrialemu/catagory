@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    margin: 20px;
+}
+.header h1{
+    display: flex;
+    justify-content: center;
+}
+.header .pp{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.header p{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+}
+.headers{
+    display: flex;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+}
+.headers button{
+    border: none;
+    margin: 10px;
+
+}
+.headers button h2{
+   cursor: pointer;
+   width: 100px;
+   height: 40px;
+   font-weight: 400;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   background-color:brown;
+   color: white;
+   transition: 0.7s;
+   transform: scale(1);
+}
+.headers button h2:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
